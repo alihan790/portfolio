@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="/" class="myform">
+        <h2>примеры форм</h2>
+        <div class="input-group">
+            <label for="username">Пвсевдоним</label>
+            <input type="text" name="username" id="username" placeholder="lololo123">
+        </div>
+        <div class="input-group">
+            <label for="password">пороль</label>
+            <input type="password" name="password" id="password" placeholder="Ведите пороль">
+        </div>
+        <div class="input-group">
+            <label for="about me">Обо мне</label>
+            <textarea name="about-me" id="about-me" cols="40" rows="4" placeholder="Напишите о себе"></textarea>
+        </div>
+        <div class="input-group">
+            <label for="gender">Пол</label>
+            <div class="input-group-wrapper">
+                <div class="input-inner">
+                    <input type="radio" name="gender" id="g1" value="male">
+                    <label for="g1">Мужчина</label>
+                </div>
+            </div>
+        </div>
+                <div class="input-inner">
+                    <input type="radio" name="gender" id="g2" value="female">
+                    <label for="g2">Женщина</label>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="ch1">Земля большая?</label>
+            <div class="input-group-wrapper">
+                <div class="input-inner">
+                    <input type="checkbox" name="earth-yes">
+                    <label for="earth-yes">да</label>
+                </div>
+                <div class="input-inner">
+                    <input type="checkbox" name="earth-no">
+                    <label for="earth-no">нет</label>
+                </div>
+                <div class="input-inner">
+                    <input type="checkbox" name="earth-dn">
+                    <label for="earth-dn">Не знаю</label>
+                </div>
+            </div>
+        </div>
+         <div class="input-group">
+            <label for="city">Выберите город</label>
+            <select name="city" id="city" size="1">
+                <option value="almaty">Алматы</option>
+                <option value="moscow">Москва</option>
+                <option value="atyrau">Атырау</option>
+                <option value="astana">Астана</option>
+            </select>
+         </div>
+         <div class="input-group">
+            <input type="submit" value="отправить">
+         </div>
+    </form>
+</body>
+</html>
